@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initScrollReveal();
   initBackToTop();
+  initQrModal();
 });
 
 /* ==========================================================================
@@ -578,3 +579,38 @@ function initBackToTop() {
     });
   });
 }
+
+/* ==========================================================================
+   12. QR CODE MODAL
+   ========================================================================== */
+function initQrModal() {
+  const qrBtn = document.getElementById('qr-btn');
+  const heroQrBtn = document.getElementById('hero-qr-btn');
+  const qrModal = document.getElementById('qr-modal');
+  const qrClose = document.getElementById('qr-close');
+
+  if (!qrModal) return;
+
+  function openQr() {
+    qrModal.classList.add('open');
+  }
+
+  function closeQr() {
+    qrModal.classList.remove('open');
+  }
+
+  if (qrBtn) qrBtn.addEventListener('click', openQr);
+  if (heroQrBtn) heroQrBtn.addEventListener('click', openQr);
+  if (qrClose) qrClose.addEventListener('click', closeQr);
+
+  qrModal.addEventListener('click', (e) => {
+    if (e.target === qrModal) closeQr();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && qrModal.classList.contains('open')) {
+      closeQr();
+    }
+  });
+}
+

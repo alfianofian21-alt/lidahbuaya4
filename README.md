@@ -1,11 +1,25 @@
 # AloePedia — Ensiklopedia Botani Edukasi Tanaman Lidah Buaya (*Aloe vera*)
 
+**SMKN 1 LEMAHABANG • KELOMPOK 4 • TANAMAN LIDAH BUAYA**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Live Demo](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen)](https://alfianofian21-alt.github.io/lidahbuaya4/)
 
-Website edukasi botani modern, interaktif, komprehensif, dan responsif dalam Bahasa Indonesia yang didedikasikan untuk pelajar, mahasiswa, guru biologi, dan masyarakat luas yang ingin mempelajari tanaman **Lidah Buaya (*Aloe vera*)** secara ilmiah dan terpercaya.
+Website edukasi botani modern, interaktif, komprehensif, dan responsif dalam Bahasa Indonesia yang disusun oleh **SMKN 1 LEMAHABANG (KELOMPOK 4)** untuk mempelajari tanaman **Lidah Buaya (*Aloe vera*)** secara ilmiah dan terpercaya.
+
+---
+
+## 📱 Scan QR Code untuk Membuka di Smartphone
+
+Pindai QR code di bawah menggunakan kamera HP untuk mengakses website langsung secara online:
+
+<p align="center">
+  <img src="assets/images/qr_code.png" width="220" alt="QR Code Website AloePedia SMKN 1 LEMAHABANG KELOMPOK 4"><br>
+  <b><a href="https://alfianofian21-alt.github.io/lidahbuaya4/">https://alfianofian21-alt.github.io/lidahbuaya4/</a></b>
+</p>
 
 ---
 
@@ -46,7 +60,8 @@ lidahbuaya4/
         ├── latex.jpg       # Eksudat lateks aloin kuning di laboratorium
         ├── farm.jpg        # Perkebunan budidaya organik
         ├── indoor.jpg      # Tanaman hias pot keramik interior
-        └── products.jpg    # Formulasi kosmetik dan produk olahan
+        ├── products.jpg    # Formulasi kosmetik dan produk olahan
+        └── qr_code.png     # Kode QR pemindaian cepat mobile
 ```
 
 ---

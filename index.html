@@ -59,12 +59,21 @@
         </ul>
       </nav>
 
-      <!-- Nav Actions (Search, Theme Toggle, CTA, Hamburger) -->
+      <!-- Nav Actions (Search, Theme Toggle, QR Code, CTA, Hamburger) -->
       <div class="nav-actions">
         <button id="search-btn" class="icon-btn" aria-label="Pencarian Materi" title="Cari Materi (Ctrl+K)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button id="qr-btn" class="icon-btn" aria-label="Scan QR Code" title="Scan QR Code Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
           </svg>
         </button>
 
@@ -104,6 +113,31 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       QR CODE SCAN MODAL
+       ========================================================================== -->
+  <div id="qr-modal" class="qr-modal" role="dialog" aria-modal="true" aria-label="Scan QR Code Website SMKN 1 LEMAHABANG">
+    <div class="qr-card">
+      <button id="qr-close" class="qr-close-btn" aria-label="Tutup QR Code">✕</button>
+      <div class="qr-header">
+        <span class="badge">Edukasi Botani Digital</span>
+        <h3 style="font-size:1.35rem; margin:8px 0 4px; color:var(--text-primary);">Scan QR Code Website</h3>
+        <p style="font-size:0.9rem; color:var(--text-secondary);">Arahkan kamera smartphone Anda ke QR code di bawah untuk membuka website ini secara langsung.</p>
+      </div>
+      <div class="qr-image-wrapper">
+        <img src="assets/images/qr_code.png" alt="QR Code Website AloePedia SMKN 1 LEMAHABANG KELOMPOK 4" width="230" height="230">
+      </div>
+      <div class="qr-footer-info">
+        <strong style="color:var(--primary); font-size:1.1rem; display:block;">SMKN 1 LEMAHABANG</strong>
+        <div style="font-size:0.95rem; font-weight:700; color:var(--text-primary); margin:4px 0;">KELOMPOK 4</div>
+        <div style="font-size:0.88rem; color:var(--text-secondary);">Jenis: TANAMAN LIDAH BUAYA (<em>Aloe vera</em>)</div>
+        <a href="https://alfianofian21-alt.github.io/lidahbuaya4/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:14px; width:100%;">
+          Buka Tautan Online ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
   <main>
     <!-- ==========================================================================
          1. HERO SECTION
@@ -116,7 +150,7 @@
               <svg class="badge-icon" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
               </svg>
-              Ensiklopedia Botani Terpadu
+              Ensiklopedia Botani Terpadu • SMKN 1 LEMAHABANG
             </div>
             <h1 class="hero-title">
               Lidah Buaya<br>
@@ -128,20 +162,24 @@
             <div class="hero-buttons">
               <a href="#tentang" class="btn btn-primary">Mulai Belajar</a>
               <a href="#manfaat" class="btn btn-outline">Lihat Manfaat</a>
+              <button id="hero-qr-btn" class="btn btn-outline" style="display:inline-flex; align-items:center; gap:8px;">
+                <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                Scan QR Code
+              </button>
             </div>
 
             <div class="hero-quick-info">
               <div class="quick-info-item">
                 <span class="quick-info-label">Nama Ilmiah</span>
-                <span class="quick-info-val"><em>Aloe vera</em></span>
+                <span class="quick-info-val">SMKN 1 LEMAHABANG</span>
               </div>
               <div class="quick-info-item">
                 <span class="quick-info-label">Famili Botani</span>
-                <span class="quick-info-val">Asphodelaceae</span>
+                <span class="quick-info-val">KELOMPOK 4</span>
               </div>
               <div class="quick-info-item">
-                <span class="quick-info-label">Jenis Tanaman</span>
-                <span class="quick-info-val">Tanaman Sukulen</span>
+                <span class="quick-info-label">Jenis</span>
+                <span class="quick-info-val">TANAMAN LIDAH BUAYA</span>
               </div>
               <div class="quick-info-item">
                 <span class="quick-info-label">Pemanfaatan Utama</span>
@@ -224,9 +262,9 @@
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                 </svg>
               </div>
-              <div class="info-card-title">Nama Ilmiah</div>
-              <div class="info-card-desc"><em>Aloe vera</em> (L.) Burm.f.</div>
-              <div class="info-card-sub">Sinonim: <em>Aloe barbadensis</em> Mill.</div>
+              <div class="info-card-title">Nama Ilmiah / Sekolah</div>
+              <div class="info-card-desc">SMKN 1 LEMAHABANG</div>
+              <div class="info-card-sub"><em>Aloe vera</em> (L.) Burm.f.</div>
             </div>
 
             <div class="info-card">
@@ -235,9 +273,9 @@
                   <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 5.07V5a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 11H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"/>
                 </svg>
               </div>
-              <div class="info-card-title">Famili Botani</div>
-              <div class="info-card-desc">Asphodelaceae</div>
-              <div class="info-card-sub">Subfamili: Asphodeloideae</div>
+              <div class="info-card-title">Famili Botani / Tim</div>
+              <div class="info-card-desc">KELOMPOK 4</div>
+              <div class="info-card-sub">Famili: Asphodelaceae</div>
             </div>
 
             <div class="info-card">
@@ -246,9 +284,9 @@
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 </svg>
               </div>
-              <div class="info-card-title">Tipe Tanaman</div>
-              <div class="info-card-desc">Sukulen Abadi</div>
-              <div class="info-card-sub">Metabolisme Asam Krasulasea (CAM)</div>
+              <div class="info-card-title">Jenis Tanaman</div>
+              <div class="info-card-desc">TANAMAN LIDAH BUAYA</div>
+              <div class="info-card-sub">Sukulen Abadi (Metabolisme CAM)</div>
             </div>
 
             <div class="info-card">
@@ -2211,6 +2249,35 @@
         </div>
       </div>
     </section>
+    <!-- ==========================================================================
+         QR CODE SCAN BANNER SECTION
+         ========================================================================== -->
+    <section class="section" id="qr-section" style="padding-top:10px; padding-bottom:30px;">
+      <div class="container">
+        <div class="qr-banner-container reveal">
+          <div class="qr-banner-grid">
+            <div class="qr-banner-info">
+              <span class="badge" style="background:rgba(255,255,255,0.18); color:#fff; border-color:rgba(255,255,255,0.3);">Scan & Akses Mobile</span>
+              <h3>Buka Website di Ponsel Pintar Anda</h3>
+              <p>
+                Gunakan kamera smartphone atau aplikasi pemindai QR untuk membaca materi botani lengkap, mencoba kuis interaktif, dan mengeksplorasi seluruh ensiklopedia ini secara fleksibel di mana pun Anda berada.
+              </p>
+              <div class="qr-banner-badges">
+                <span class="qr-badge-pill">🏫 SMKN 1 LEMAHABANG</span>
+                <span class="qr-badge-pill">👥 KELOMPOK 4</span>
+                <span class="qr-badge-pill">🌿 TANAMAN LIDAH BUAYA</span>
+              </div>
+            </div>
+            <div class="qr-banner-preview">
+              <div class="qr-image-wrapper" style="margin:0;">
+                <img src="assets/images/qr_code.png" alt="Scan QR Code SMKN 1 LEMAHABANG KELOMPOK 4" width="200" height="200">
+              </div>
+              <div style="font-size:0.85rem; color:#d2ebd9; margin-top:8px; font-weight:600;">Scan dengan kamera HP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ==========================================================================
@@ -2231,7 +2298,7 @@
             "Belajar mengenal <em>Aloe vera</em> dan keanekaragaman tanaman melalui informasi yang mudah dipahami."
           </p>
           <p style="font-size:0.85rem; color:#8da496;">
-            Platform ensiklopedia mini botani independen yang didedikasikan untuk literasi sains generasi muda.
+            Proyek Edukasi Sains Botani Siswa <strong>SMKN 1 LEMAHABANG</strong> • <strong>KELOMPOK 4</strong>.
           </p>
         </div>
 
@@ -2274,7 +2341,7 @@
 
       <div class="footer-bottom">
         <div>
-          <strong>Website Edukasi Tanaman Lidah Buaya</strong> • Dikembangkan untuk tujuan pembelajaran sains biologi.
+          <strong>Website Edukasi Tanaman Lidah Buaya</strong> • SMKN 1 LEMAHABANG • KELOMPOK 4.
         </div>
         <div>
           Copyright © 2026 <strong>AloePedia</strong>. Seluruh hak cipta dilindungi.
