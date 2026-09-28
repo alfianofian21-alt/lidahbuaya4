@@ -33,7 +33,7 @@ AloePedia dirancang dengan estetika **modern botanical** bernuansa alam (*sage g
 ## 📁 Struktur Direktori
 
 ```text
-TANAMAN-HERBAL-LIDAH-BUAYA/
+lidahbuaya4/
 ├── index.html          # Struktur dokumen semantik HTML5 dengan 22 bab lengkap
 ├── style.css           # Sistem desain botanical CSS modern (responsif & dark mode)
 ├── script.js           # Logika interaktif: kuis, pencarian, akordeon, scrollspy, lightbox
