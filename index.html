@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AloePedia — Ensiklopedia botani edukatif modern dan interaktif mengenai Tanaman Lidah Buaya (Aloe vera). Pelajari morfologi, sejarah, kandungan fitokimia, budidaya, manfaat, hingga fakta ilmiahnya.">
+  <meta name="keywords" content="Lidah Buaya, Aloe vera, Tanaman Sukulen, Botani, Morfologi Tumbuhan, Budidaya Aloe vera, Kandungan Lidah Buaya, Gel Aloe Vera, Edukasi Biologi">
+  <meta name="author" content="AloePedia Edukasi Botani">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="AloePedia — Ensiklopedia Edukasi Botani Lidah Buaya (Aloe vera)">
+  <meta property="og:description" content="Pelajari Aloe vera secara mendalam: morfologi, klasifikasi ilmiah, kandungan aktif, cara budidaya, manfaat berbasis bukti, dan kuis interaktif.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <title>AloePedia — Ensiklopedia Lengkap & Interaktif Tanaman Lidah Buaya (Aloe vera)</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="AloePedia Beranda">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 8v8"/>
+            <path d="M8 12h8"/>
+          </svg>
+        </span>
+        <span>AloePedia</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#morfologi" class="nav-link">Morfologi</a></li>
+          <li><a href="#kandungan" class="nav-link">Kandungan</a></li>
+          <li><a href="#manfaat" class="nav-link">Manfaat</a></li>
+          <li><a href="#budidaya" class="nav-link">Budidaya</a></li>
+          <li><a href="#pengolahan" class="nav-link">Pengolahan</a></li>
+          <li><a href="#fakta" class="nav-link">Fakta</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#quiz" class="nav-link">Kuis</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search, Theme Toggle, CTA, Hamburger) -->
+      <div class="nav-actions">
+        <button id="search-btn" class="icon-btn" aria-label="Pencarian Materi" title="Cari Materi (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button id="theme-toggle" class="icon-btn" aria-label="Ganti Mode Tema" title="Ganti Mode Gelap/Terang">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#tentang" class="btn btn-primary btn-sm">Jelajahi Aloe Vera</a>
+
+        <button id="hamburger-btn" class="hamburger" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SEARCH MODAL
+       ========================================================================== -->
+  <div id="search-modal" class="search-modal" role="dialog" aria-modal="true" aria-label="Pencarian Materi AloePedia">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" class="search-input" placeholder="Cari topik (misal: lateks, acemannan, tanah, akar)..." autocomplete="off">
+        <button id="search-close" class="icon-btn" style="border:none;" aria-label="Tutup Pencarian">✕</button>
+      </div>
+      <div id="search-results" class="search-results">
+        <!-- Results generated dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <div class="badge">
+              <svg class="badge-icon" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+              Ensiklopedia Botani Terpadu
+            </div>
+            <h1 class="hero-title">
+              Lidah Buaya<br>
+              <span class="gradient-text">Tanaman Sederhana dengan Beragam Potensi</span>
+            </h1>
+            <p class="hero-subtitle">
+              Kenali <em>Aloe vera</em> lebih dekat, mulai dari sejarah, karakteristik, kandungan, manfaat, cara budidaya, hingga berbagai fakta menariknya.
+            </p>
+            <div class="hero-buttons">
+              <a href="#tentang" class="btn btn-primary">Mulai Belajar</a>
+              <a href="#manfaat" class="btn btn-outline">Lihat Manfaat</a>
+            </div>
+
+            <div class="hero-quick-info">
+              <div class="quick-info-item">
+                <span class="quick-info-label">Nama Ilmiah</span>
+                <span class="quick-info-val"><em>Aloe vera</em></span>
+              </div>
+              <div class="quick-info-item">
+                <span class="quick-info-label">Famili Botani</span>
+                <span class="quick-info-val">Asphodelaceae</span>
+              </div>
+              <div class="quick-info-item">
+                <span class="quick-info-label">Jenis Tanaman</span>
+                <span class="quick-info-val">Tanaman Sukulen</span>
+              </div>
+              <div class="quick-info-item">
+                <span class="quick-info-label">Pemanfaatan Utama</span>
+                <span class="quick-info-val">Gel Daging Daun</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero.jpg" alt="Tanaman Lidah Buaya Segar dalam Pot Terakota" width="600" height="480" loading="eager">
+            </div>
+            <div class="hero-badge-float">
+              <div class="badge-float-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <strong style="display:block; font-size: 0.95rem; color: var(--text-primary);">Adaptasi Sukulen</strong>
+                <span style="font-size: 0.82rem; color: var(--text-secondary);">Efisiensi penyimpanan air daun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Statistics Banner -->
+        <div class="stats-banner reveal">
+          <div class="stat-item">
+            <div class="stat-number" data-target="500" data-suffix="+">0</div>
+            <div class="stat-label">Spesies dalam Genus Aloe</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="98.5" data-suffix="%">0</div>
+            <div class="stat-label">Kadar Air pada Gel Murni</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="4000" data-suffix="+">0</div>
+            <div class="stat-label">Tahun Riwayat Pemanfaatan</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="75" data-suffix="+">0</div>
+            <div class="stat-label">Komponen Senyawa Bioaktif</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. APA ITU LIDAH BUAYA?
+         ========================================================================== -->
+    <section class="section section-alt" id="tentang">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 01 • Pengenalan</span>
+          <h2 class="section-title">Mengenal <em>Aloe vera</em></h2>
+          <p class="section-subtitle">
+            Pahami hakikat botanis, asal-usul sebaran geografis, dan adaptasi istimewa tanaman sukulen yang telah mendampingi peradaban manusia selama ribuan tahun.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              <strong>Lidah buaya</strong> (secara ilmiah dikenal sebagai <em>Aloe vera</em>) adalah tumbuhan berbunga tahunan dari kelompok <strong>tanaman sukulen</strong>. Tumbuhan ini memiliki karakteristik khas berupa daun berdaging tebal yang berfungsi sebagai tempat penampung air alami, memungkinkannya bertahan hidup di lingkungan kering dengan curah hujan rendah.
+            </p>
+            <p>
+              Habitat aslinya diperkirakan berasal dari wilayah beriklim panas dan kering di Semenanjung Arab bagian selatan. Melalui perdagangan maritim kuno dan eksplorasi bangsa-bangsa dunia, tanaman ini kini telah dinaturalisasi dan dibudidayakan secara luas di wilayah tropis, subtropis, dan mediterania di seluruh benua.
+            </p>
+            <p>
+              Di dalam helaian daunnya terdapat jaringan lunak transparan yang dikenal luas sebagai <strong>gel lidah buaya</strong>. Struktur gel ini tersusun terutama atas molekul air yang terikat dalam matriks rantai polisakarida. Selama berabad-abad, gel maupun getah daunnya dimanfaatkan untuk berbagai kebutuhan tradisional, perawatan tubuh, kosmetik, hingga produk pangan olahan.
+            </p>
+          </div>
+
+          <div class="about-cards-grid reveal">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                </svg>
+              </div>
+              <div class="info-card-title">Nama Ilmiah</div>
+              <div class="info-card-desc"><em>Aloe vera</em> (L.) Burm.f.</div>
+              <div class="info-card-sub">Sinonim: <em>Aloe barbadensis</em> Mill.</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 5.07V5a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 11H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"/>
+                </svg>
+              </div>
+              <div class="info-card-title">Famili Botani</div>
+              <div class="info-card-desc">Asphodelaceae</div>
+              <div class="info-card-sub">Subfamili: Asphodeloideae</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="info-card-title">Tipe Tanaman</div>
+              <div class="info-card-desc">Sukulen Abadi</div>
+              <div class="info-card-sub">Metabolisme Asam Krasulasea (CAM)</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <line x1="12" y1="1" x2="12" y2="3"/>
+                  <line x1="12" y1="21" x2="12" y2="23"/>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                  <line x1="1" y1="12" x2="3" y2="12"/>
+                  <line x1="21" y1="12" x2="23" y2="12"/>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+              </div>
+              <div class="info-card-title">Habitat Tumbuh</div>
+              <div class="info-card-desc">Tropis & Subtropis</div>
+              <div class="info-card-sub">Tanah berpori dan pencahayaan terang</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SEJARAH DAN ASAL-USUL (TIMELINE)
+         ========================================================================== -->
+    <section class="section" id="sejarah">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 02 • Kronologi</span>
+          <h2 class="section-title">Sejarah & Pemanfaatan Lintas Peradaban</h2>
+          <p class="section-subtitle">
+            Jejak dokumentasi arkeologis dan naskah kuno yang membuktikan bagaimana lidah buaya telah dimanfaatkan oleh tabib dan peradaban besar sejak ribuan tahun silam.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2200 SM • Mesopotamia Kuno</span>
+              <h3 class="timeline-title">Tablet Tanah Liat Sumeria</h3>
+              <p class="timeline-desc">
+                Dokumentasi tertulis tertua mengenai tanaman dari genus Aloe ditemukan pada serangkaian lempeng tanah liat di kota kuno Nippur (wilayah Irak modern), mencatat penggunaannya sebagai ramuan pembersih raga.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">1550 SM • Mesir Kuno</span>
+              <h3 class="timeline-title">Papirus Ebers & Ratu Mesir</h3>
+              <p class="timeline-desc">
+                Naskah medis Papirus Ebers mencatat lidah buaya sebagai tanaman obat untuk perawatan kulit dan luka bakar. Bangsa Mesir menjulukinya "tanaman keabadian", dan konon digunakan dalam ritual kecantikan Ratu Nefertiti dan Cleopatra.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">Abad ke-4 SM • Yunani Kuno</span>
+              <h3 class="timeline-title">Aristoteles & Aleksander Agung</h3>
+              <p class="timeline-desc">
+                Filsuf Aristoteles membujuk Aleksander Agung untuk menaklukkan Pulau Sokotra di Samudra Hindia demi mengamankan pasokan tanaman Aloe guna merawat luka prajurit tempur di medan perang.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">Abad ke-1 M • Romawi Kuno</span>
+              <h3 class="timeline-title">De Materia Medica oleh Dioscorides</h3>
+              <p class="timeline-desc">
+                Ahli farmakopeia militer Romawi, Pedanius Dioscorides, menyusun deskripsi komprehensif pertama tentang penggunaan getah lidah buaya untuk iritasi kulit, radang gusi, serta khasiat pencaharnya.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">Abad ke-10–16 M • Perjalanan Jalur Sutra</span>
+              <h3 class="timeline-title">Penyebaran ke Asia & Benua Baru</h3>
+              <p class="timeline-desc">
+                Melalui rute perdagangan Jalur Sutra, lidah buaya diperkenalkan ke Tiongkok (dikenal sebagai <em>Lú Huì</em>) dan India (dalam sistem Ayurveda). Misionaris Spanyol kemudian membawanya menyeberangi Samudra Atlantik ke Hindia Barat dan benua Amerika.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">Era Modern • Abad ke-20–21</span>
+              <h3 class="timeline-title">Industrialisasi & Standardisasi Ilmiah</h3>
+              <p class="timeline-desc">
+                Penemuan teknik stabilisasi gel murni pada pertengahan abad ke-20 melahirkan industri kosmetik modern bernilai miliaran dolar. Terbentuk lembaga riset seperti International Aloe Science Council (IASC) untuk menetapkan standar mutu dan kemurnian produk dunia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. KLASIFIKASI ILMIAH
+         ========================================================================== -->
+    <section class="section section-alt" id="klasifikasi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 03 • Taksonomi</span>
+          <h2 class="section-title">Klasifikasi Ilmiah</h2>
+          <p class="section-subtitle">
+            Kedudukan taksonomis tanaman <em>Aloe vera</em> berdasarkan konsensus botani internasional Angiosperm Phylogeny Group (APG IV).
+          </p>
+        </div>
+
+        <div class="taxo-wrapper reveal">
+          <table class="taxo-table">
+            <thead>
+              <tr>
+                <th>Tingkat Taksonomi</th>
+                <th>Nama Ilmiah / Takson</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="taxo-rank">Kingdom</td>
+                <td class="taxo-taxon">Plantae (Tumbuhan)</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Klad</td>
+                <td class="taxo-taxon">Tracheophytes (Tumbuhan berpembuluh)</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Klad</td>
+                <td class="taxo-taxon">Angiosperms (Tumbuhan berbunga)</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Klad</td>
+                <td class="taxo-taxon">Monocots (Tumbuhan berkeping satu)</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Ordo</td>
+                <td class="taxo-taxon">Asparagales</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Famili</td>
+                <td class="taxo-taxon">Asphodelaceae</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Subfamili</td>
+                <td class="taxo-taxon">Asphodeloideae</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Genus</td>
+                <td class="taxo-taxon italic">Aloe L.</td>
+              </tr>
+              <tr>
+                <td class="taxo-rank">Spesies</td>
+                <td class="taxo-taxon italic">Aloe vera (L.) Burm.f.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="taxo-note">
+            <strong>Catatan Ilmiah:</strong> Penempatan famili tanaman ini secara historis pernah dikelompokkan ke dalam Liliaceae atau Aloaceae pada sistem klasifikasi klasik (seperti Cronquist). Namun, berdasarkan analisis filogenetika molekuler modern sistem APG IV, genus <em>Aloe</em> saat ini secara resmi berada dalam famili <strong>Asphodelaceae</strong>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MORFOLOGI LIDAH BUAYA
+         ========================================================================== -->
+    <section class="section" id="morfologi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 04 • Organologi</span>
+          <h2 class="section-title">Morfologi & Bagian Tanaman</h2>
+          <p class="section-subtitle">
+            Pelajari setiap organ anatomi <em>Aloe vera</em>, mulai dari sistem perakaran serabut hingga bunga tabung yang menjulang.
+          </p>
+        </div>
+
+        <div class="morph-grid">
+          <!-- Card 1: Akar -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M8 8l4 4 4-4M6 14l6 6 6-6"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Akar (Radix)</h3>
+            <p class="morph-desc">
+              Sistem perakaran serabut (fibrous root) yang menyebar dangkal secara mendatar di dekat permukaan tanah. Bentuk dangkal ini merupakan adaptasi cerdas untuk menyerap tetesan embun dan air hujan seketika sebelum air menguap.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Perakaran serabut dangkal (kedalaman 15–30 cm).
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Sangat sensitif terhadap kondisi tanah yang becek/tergenang.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Batang -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="2" width="6" height="20" rx="2"/>
+                <path d="M6 10h3M15 14h3M6 18h3"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Batang (Caulis)</h3>
+            <p class="morph-desc">
+              Memiliki batang sangat pendek (disebut <em>acaulescent</em> atau subacaulescent) dengan panjang hanya sekitar 10–30 cm. Batang diselimuti rapat oleh pelepah pangkal daun, dan lambat laun mengeras berkayu seiring usia tanaman.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Hampir tak terlihat pada tanaman muda karena tertutup roset.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Tempat tumbuhnya tunas anakan samping (pups).
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Daun -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Daun (Folium)</h3>
+            <p class="morph-desc">
+              Organ utama yang berdaging sangat tebal (sukulen), tersusun melingkar padat (roset). Helaian daun berbentuk lanset dengan pangkal lebar dan ujung meruncing, berwarna hijau keabu-abuan dengan lapisan lilin alami.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Tepi daun dilengkapi duri-duri kecil yang lentur.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Mampu menyimpan air hingga 98–99% dari bobotnya.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Gel Bening -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Gel Bening (Parenkim Air)</h3>
+            <p class="morph-desc">
+              Jaringan lunak menyerupai agar-agar transparan di pusat daun, tersusun dari sel parenkim berdinding tipis. Mengandung cadangan air tinggi, polisakarida acemannan, vitamin terlarut, mineral, dan asam amino.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Transparan, tidak berbau tajam, dan tidak berasa pahit.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Komponen utama untuk perawatan kulit dan pangan.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 5: Lateks -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Lateks Kuning (Eksudat)</h3>
+            <p class="morph-desc">
+              Cairan getah pekat berwarna kuning kehijauan yang mengalir dari sel-sel perisikel tepat di bawah kulit daun saat dipotong. Mengandung senyawa antrakuinon seperti aloin dengan rasa sangat pahit.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Memiliki sifat laksatif (pencahar) yang sangat kuat.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Berbeda total dari gel dan harus dibersihkan jika ingin dikonsumsi.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 6: Bunga -->
+          <div class="morph-card reveal">
+            <div class="morph-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v8M8 6h8M7 10l5 12 5-12"/>
+              </svg>
+            </div>
+            <h3 class="morph-title">Bunga (Flos)</h3>
+            <p class="morph-desc">
+              Muncul dari tangkai bunga tegak silindris (infloresens bulir/rasemos) yang menjulang setinggi 60–90 cm. Bunga berbentuk tabung menggantung dengan variasi warna kuning cerah hingga jingga kemerahan.
+            </p>
+            <ul class="morph-bullets">
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Mekar saat tanaman cukup umur dan mendapat sinar matahari penuh.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                Kaya nektar yang menarik serangga penyerbuk dan burung madu.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. STRUKTUR DAUN (CROSS-SECTION INTERAKTIF)
+         ========================================================================== -->
+    <section class="section section-alt" id="struktur-daun">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 05 • Anatomi Mikro</span>
+          <h2 class="section-title">Struktur Irisan Melintang Daun</h2>
+          <p class="section-subtitle">
+            Klik tiap lapisan di bawah ini untuk melihat struktur anatomi mikroskopis dan perbedaan fungsi antara jaringan pelindung, jalur getah lateks, dan inti gel bening.
+          </p>
+        </div>
+
+        <div class="cross-wrapper">
+          <div class="cross-visual-container reveal">
+            <img src="assets/images/latex.jpg" alt="Irisan Melintang Daun Lidah Buaya dengan Getah Kuning Lateks Menetes" width="550" height="420" loading="lazy">
+          </div>
+
+          <div class="cross-info-panel reveal">
+            <!-- Tab 1 -->
+            <div class="cross-tab-item active" data-part="kulit" tabindex="0" role="button" aria-label="Lihat Lapisan Kulit Luar">
+              <div class="cross-tab-header">
+                <span class="cross-tab-name">1. Kulit Luar (Epidermis & Kutikula)</span>
+                <span class="cross-tab-badge">Pelindung</span>
+              </div>
+              <p class="cross-tab-desc">Lapisan terluar dengan kutikula tebal berlilin untuk menahan penguapan air secara drastis.</p>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="cross-tab-item" data-part="lateks" tabindex="0" role="button" aria-label="Lihat Lapisan Getah Lateks">
+              <div class="cross-tab-header">
+                <span class="cross-tab-name">2. Lapisan Lateks (Sel Perisikel)</span>
+                <span class="cross-tab-badge" style="background:#fef3c7; color:#b45309;">Getah Aloin</span>
+              </div>
+              <p class="cross-tab-desc">Saluran mikroskopis tepat di bawah kulit penghasil getah kuning berasa pahit pekat.</p>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="cross-tab-item" data-part="gel" tabindex="0" role="button" aria-label="Lihat Inti Gel Bening">
+              <div class="cross-tab-header">
+                <span class="cross-tab-name">3. Gel Bagian Dalam (Parenkim)</span>
+                <span class="cross-tab-badge" style="background:#dcfce7; color:#15803d;">Inti Air</span>
+              </div>
+              <p class="cross-tab-desc">Jaringan gelatin bening murni kaya rantai polisakarida dan nutrisi penenang kulit.</p>
+            </div>
+
+            <!-- Detailed Dynamic Display Box -->
+            <div style="background:var(--bg-card); padding:24px; border-radius:var(--radius-md); border:1px solid var(--border-card); box-shadow:var(--shadow-sm); margin-top:8px;">
+              <h4 id="cross-dynamic-title" style="font-size:1.15rem; margin-bottom:8px; color:var(--primary);">1. Kulit Luar (Kutikula & Epidermis)</h4>
+              <p id="cross-dynamic-desc" style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:10px;">
+                Lapisan pelindung keras dan tebal dengan ketebalan sekitar 15–18 lapis sel. Dilapisi kutikula berlilin tebal yang meminimalkan penguapan air saat cuaca panas terik. Berfungsi mensintesis karbohidrat melalui kloroplas dan memberikan struktur mekanik kaku pada daun.
+              </p>
+              <div id="cross-dynamic-sub" style="font-size:0.85rem; font-weight:600; color:var(--text-muted);">
+                Mengandung klorofil untuk fotosintesis dan mikropori stomata tipe khusus sukulen.
+              </div>
+            </div>
+
+            <!-- Warning Callout -->
+            <div class="warning-callout">
+              <div class="warning-callout-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <div class="warning-callout-text">
+                <h4>Perhatian Penting: Bedakan Gel dan Lateks!</h4>
+                <p>
+                  Gel bagian dalam yang jernih dan bening <strong>sangat berbeda</strong> fungsinya dengan cairan lateks kuning (aloin) di bawah kulit. Lateks bersifat pencahar kuat dan dapat memicu iritasi usus bila tertelan dalam jumlah tertentu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. KANDUNGAN LIDAH BUAYA (INFOGRAPHIC)
+         ========================================================================== -->
+    <section class="section" id="kandungan">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 06 • Fitokimia</span>
+          <h2 class="section-title">Kandungan Senyawa Aktif</h2>
+          <p class="section-subtitle">
+            Gel <em>Aloe vera</em> sebagian besar terdiri atas air murni dan mengandung spektrum komponen bioaktif yang bekerja secara sinergis dalam jumlah yang bervariasi secara alami.
+          </p>
+        </div>
+
+        <div class="nutri-grid">
+          <!-- Item 1: Air -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Air Alami</h3>
+            <p class="nutri-detail">
+              Merupakan konstituen terbesar penyusun gel daun segar, berfungsi sebagai pelarut alami dan medium pembawa seluruh zat gizi tumbuhan.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Hidrator Utama</span>
+              <span class="nutri-tag">Basis Gel Cair</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Polisakarida -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Polisakarida Kompleks</h3>
+            <p class="nutri-detail">
+              Rantai karbohidrat panjang polimerik yang memberikan tekstur kenyal dan kental pada gel. Senyawa kuncinya adalah <strong>Acemannan</strong> dan <strong>Glukomanan</strong>.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Acemannan</span>
+              <span class="nutri-tag">Glukomanan</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Asam Amino -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Asam Amino</h3>
+            <p class="nutri-detail">
+              Mengandung ragam asam amino penyusun protein seluler, termasuk asam amino esensial dan non-esensial yang dibutuhkan dalam pemeliharaan jaringan.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Arginin</span>
+              <span class="nutri-tag">Lisin</span>
+              <span class="nutri-tag">Asam Glutamat</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Mineral -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Mineral Esensial</h3>
+            <p class="nutri-detail">
+              Mineral mikro dan makro anorganik yang terserap dari tanah, berperan penting sebagai kofaktor reaksi enzimatik alami tumbuhan.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Kalsium</span>
+              <span class="nutri-tag">Magnesium</span>
+              <span class="nutri-tag">Seng (Zn)</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Vitamin -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Vitamin Alami</h3>
+            <p class="nutri-detail">
+              Kandungan antioksidan vitamin seperti Vitamin A (dalam bentuk beta-karoten), C, dan E, serta folat dan kolin dalam jumlah renik.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Vitamin C & E</span>
+              <span class="nutri-tag">Beta-karoten</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Enzim -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Enzim Fisiologis</h3>
+            <p class="nutri-detail">
+              Biokatalisator alami seperti bradikinase, amilase, lipase, dan katalase yang membantu proses perombakan gula dan lemak.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Bradikinase</span>
+              <span class="nutri-tag">Amilase</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Senyawa Fenolik -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Senyawa Fenolik</h3>
+            <p class="nutri-detail">
+              Senyawa metabolit sekunder (golongan antrakuinon seperti aloin A dan B) yang terkonsentrasi di lapisan lateks luar sebagai perlindungan tanaman.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Aloin A & B</span>
+              <span class="nutri-tag">Aloe-emodin</span>
+            </div>
+          </div>
+
+          <!-- Item 8: Bioaktif Lain -->
+          <div class="nutri-card reveal">
+            <div class="nutri-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                <line x1="16" y1="8" x2="2" y2="22"/>
+                <line x1="17.5" y1="15" x2="9" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="nutri-name">Komponen Bioaktif Lain</h3>
+            <p class="nutri-detail">
+              Fitosterol nabati (seperti beta-sitosterol, lupeol), senyawa saponin berbusa lembut, serta serat lignin yang membantu daya serap gel.
+            </p>
+            <div class="nutri-tags">
+              <span class="nutri-tag">Fitosterol</span>
+              <span class="nutri-tag">Saponin</span>
+              <span class="nutri-tag">Lignin</span>
+            </div>
+          </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 25px; font-size: 0.88rem; color: var(--text-muted);">
+          <em>*Konsentrasi senyawa spesifik bervariasi bergantung pada varietas, umur panen, kondisi iklim, dan teknik pengolahan laboratorium.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. MANFAAT LIDAH BUAYA & RESEARCH TIERS
+         ========================================================================== -->
+    <section class="section section-alt" id="manfaat">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 07 • Aplikasi & Riset</span>
+          <h2 class="section-title">Manfaat & Penggunaan</h2>
+          <p class="section-subtitle">
+            Eksplorasi ragam aplikasi gel <em>Aloe vera</em> di bidang perawatan kulit, kosmetika, rambut, produk pangan, serta tinjauan bukti ilmiah terkini.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Card 1: Perawatan Kulit -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 0 0-7 17.14V22l3.5-1.5L12 22l3.5-1.5L19 22v-2.86A10 10 0 0 0 12 2z"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Perawatan Kulit</h3>
+            </div>
+            <p>
+              Gel lidah buaya populer digunakan untuk menghidrasi kulit tanpa rasa lengket, memberikan sensasi dingin menenangkan pada kulit terpapar terik matahari, serta mendukung hidrasi pelindung kulit (skin barrier).
+            </p>
+            <ul class="benefit-features">
+              <li>Menenangkan kulit kemerahan ringan</li>
+              <li>Memberikan hidrasi air instan</li>
+              <li>Membantu menjaga elastisitas epidermis</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Kosmetika Modern -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="8" width="18" height="13" rx="2"/>
+                  <path d="M8 8V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Kosmetika & Pembersih</h3>
+            </div>
+            <p>
+              Bahan baku serbaguna dalam formulasi sabun pembersih lembut, lotion pelembap harian, toner penyegar, dan gel masker wajah karena kompatibilitasnya yang tinggi dengan beragam tipe kulit.
+            </p>
+            <ul class="benefit-features">
+              <li>Campuran dasar lotion tubuh & pelembap</li>
+              <li>Bahan dasar gel penenang serbaguna</li>
+              <li>Pelembap alami untuk bibir kering</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Perawatan Rambut -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Perawatan Rambut</h3>
+            </div>
+            <p>
+              Sejak lama digunakan secara tradisional untuk melembapkan kulit kepala kering, membantu melembutkan helai rambut kusam, serta diformulasikan ke dalam produk shampoo dan kondisioner.
+            </p>
+            <ul class="benefit-features">
+              <li>Menyejukkan kulit kepala yang gatal</li>
+              <li>Membantu menghaluskan kutikula batang rambut</li>
+              <li>Bahan alami masker rambut berkilau</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Produk Pangan Olahan -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                  <line x1="6" y1="1" x2="6" y2="4"/>
+                  <line x1="10" y1="1" x2="10" y2="4"/>
+                  <line x1="14" y1="1" x2="14" y2="4"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Produk Pangan & Minuman</h3>
+            </div>
+            <p>
+              Daging gel bening yang telah dicuci bersih dan dihilangkan lateksnya diolah menjadi minuman penyegar nata de aloe, sari lidah buaya kemasan, jeli, dan manisan berserat tinggi.
+            </p>
+            <ul class="benefit-features">
+              <li>Potongan gel kenyal (nata de aloe)</li>
+              <li>Minuman herba kemasan higienis</li>
+              <li>Bahan permen jeli serat fungsional</li>
+            </ul>
+          </div>
+
+          <!-- Card 5: Industri Manufaktur -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 20h20M7 20V8l5 5 5-5v12"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Industri & Bioteknologi</h3>
+            </div>
+            <p>
+              Ekstrak gel terliofilisasi (serbuk beku-kering) digunakan dalam skala industri farmasi topikal, industri pelapis edible coating alami untuk memperpanjang kesegaran buah pascapanen.
+            </p>
+            <ul class="benefit-features">
+              <li>Bahan baku serbuk murni terstandar</li>
+              <li>Pelapis biologis (edible coating) buah segar</li>
+              <li>Formulasi produk perawatan hewan peliharaan</li>
+            </ul>
+          </div>
+
+          <!-- Card 6: Tanaman Hias Ruangan -->
+          <div class="benefit-card reveal">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Tanaman Hias & Lanskap</h3>
+            </div>
+            <p>
+              Bentuk roset geometrisnya yang anggun dan kemampuannya bertahan dalam ruangan menjadikannya tanaman pot favorit untuk dekorasi interior, taman bebatuan (rock garden), dan teras hemat air.
+            </p>
+            <ul class="benefit-features">
+              <li>Estetika minimalis botanik modern</li>
+              <li>Perawatan rendah untuk pemula</li>
+              <li>Toleran lingkungan kering dalam ruangan</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Subsection: Apa yang Sudah Diteliti Secara Ilmiah? -->
+        <div class="research-evidence-box reveal">
+          <div class="evidence-header">
+            <span class="badge" style="background:var(--sage-soft); border-color:var(--sage-light);">Kritisi Ilmiah</span>
+            <h3>Apa yang Sudah Diteliti oleh Sains?</h3>
+            <p>
+              Sebagai platform edukasi yang bertanggung jawab, kami membedakan secara tegas antara bukti penelitian yang kokoh dengan klaim tradisional atau promosi berlebihan.
+            </p>
+          </div>
+
+          <div class="evidence-grid">
+            <!-- Tier 1 -->
+            <div class="evidence-card">
+              <span class="evidence-tier-badge tier-high">Bukti Ilmiah Kuat</span>
+              <h4>Hidrasi Kulit & Luka Ringan</h4>
+              <p>
+                Riset klinis dermatologi mendukung efektivitas gel murni dalam mempercepat penyembuhan luka bakar derajat pertama-kedua, menjaga kelembapan stratum korneum, dan menenangkan eritema akibat radiasi UV.
+              </p>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="evidence-card">
+              <span class="evidence-tier-badge tier-moderate">Aplikasi Kosmetik Teruji</span>
+              <h4>Penggunaan Kosmetika Topikal</h4>
+              <p>
+                Formulasi gel dan krim dengan ekstrak lidah buaya terbukti aman dan bermanfaat memberikan efek emolien, menenangkan kulit sensitif, dan menjaga kelembutan rambut tanpa efek samping pada sebagian besar individu.
+              </p>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="evidence-card">
+              <span class="evidence-tier-badge tier-investigational">Penelitian Awal / Terbatas</span>
+              <h4>Klaim Penyakit Dalam Kronis</h4>
+              <p>
+                Penelitian awal pada hewan dan uji klinis skala kecil meneliti potensi pengaruhnya terhadap kadar glukosa darah atau profil lipid, namun <strong>belum cukup bukti konklusif</strong> untuk menjadikannya pengganti terapi obat medis standar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. LIDAH BUAYA DALAM KEHIDUPAN SEHARI-HARI
+         ========================================================================== -->
+    <section class="section" id="keseharian">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 08 • Ragam Produk</span>
+          <h2 class="section-title">Lidah Buaya dalam Keseharian</h2>
+          <p class="section-subtitle">
+            Berbagai wujud pemanfaatan Aloe vera yang mudah kita jumpai di toko, apotek, pasar, maupun pekarangan rumah.
+          </p>
+        </div>
+
+        <div class="daily-grid">
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Gel Aloe Soothing</h4>
+              <p>Gel serbaguna dalam jar untuk melembapkan kulit kering dan menenangkan sengatan matahari.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Minuman Segar Aloe</h4>
+              <p>Minuman kemasan rasa buah dengan potongan daging lidah buaya yang kenyal dan menyegarkan.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Masker Lembar (Sheet Mask)</h4>
+              <p>Masker wajah siap pakai yang diresapi esens lidah buaya untuk hidrasi mendalam dalam 15 menit.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M8 8V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Lotion Pelembap Tubuh</h4>
+              <p>Krim pelembap harian bertekstur ringan yang cepat menyerap untuk menjaga kelembutan kulit.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Shampoo & Hair Conditioner</h4>
+              <p>Formula pembersih dan perawatan helai rambut agar tampak berkilau, lembut, dan sehat.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Sabun Mandi Alami</h4>
+              <p>Sabun batang atau cair herbal berbasis minyak kelapa dan lidah buaya tanpa deterjen keras.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Kosmetik & Lip Balm</h4>
+              <p>Pewarna bibir, pelembap bibir, dan alas bedak ringan dengan kandungan pelembap alami.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Tanaman Hias Pot Rumah</h4>
+              <p>Tanaman hias penghias meja atau pekarangan rumah yang tangguh dan menyerap energi positif.</p>
+            </div>
+          </div>
+
+          <div class="daily-card reveal">
+            <div class="daily-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <div class="daily-info">
+              <h4>Bahan Pangan Berserat</h4>
+              <p>Bahan campuran jeli, es buah, sup manis, atau manisan segar khas daerah Pontianak.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CARA MENANAM LIDAH BUAYA (STEP-BY-STEP)
+         ========================================================================== -->
+    <section class="section section-alt" id="budidaya">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 09 • Agronomi</span>
+          <h2 class="section-title">Panduan Menanam Langkah demi Langkah</h2>
+          <p class="section-subtitle">
+            Panduan praktis budidaya <em>Aloe vera</em> di rumah, mulai dari pemilihan anakan yang tepat hingga proses panen daun segar.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">01</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Memilih Bibit & Anakan (Pups)</h3>
+              <p>
+                Pilih tunas anakan samping yang tumbuh dari dasar tanaman induk dengan tinggi minimal 8–12 cm dan telah memiliki 3–4 helai daun serta perakaran mandiri. Pisahkan perlahan menggunakan pisau steril dekat pangkal batang.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">02</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Menyiapkan Media Tanam Porus</h3>
+              <p>
+                Gunakan media tanam dengan drainase cepat. Komposisi ideal adalah campuran tanah kebun, pasir malang kasar atau perlite, dan kompos matang dengan perbandingan 1:1:1. Hindari tanah lempung padat yang menahan genangan air.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">03</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Proses Penanaman ke Dalam Pot</h3>
+              <p>
+                Gunakan pot bertanah liat (terakota) yang memiliki lubang pembuangan air di dasarnya. Letakkan bibit tegak di bagian tengah, timbun akar dengan media tanam, dan pastikan pangkal daun tidak terkubur terlalu dalam agar tidak membusuk.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">04</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Aturan Penyiraman Sukulen</h3>
+              <p>
+                Gunakan prinsip "siram tuntas, biarkan mengering". Siram sampai air mengalir keluar dari lubang dasar pot, lalu jangan siram lagi hingga media tanah bagian atas (sedalam 3–5 cm) benar-benar kering (biasanya cukup 1–2 minggu sekali).
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">05</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Kebutuhan Sinar Matahari</h3>
+              <p>
+                Tempatkan pot di tempat yang menerima sinar matahari terang tidak langsung atau sinar matahari pagi selama 4–6 jam sehari. Jika terpapar sinar matahari siang yang terlalu terik mendadak, daun dapat berubah warna menjadi kecokelatan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">06</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Pemeliharaan Rutin</h3>
+              <p>
+                Lap permukaan daun sesekali dengan kain lembap lembut untuk membersihkan debu agar stomata daun tetap bernapas lancar. Berikan pupuk organik cair dosis rendah atau kompos matang setiap 2–3 bulan sekali di musim pertumbuhan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="step-card reveal">
+            <div class="step-number">
+              <span class="step-number-val">07</span>
+              <span class="step-number-sub">Langkah</span>
+            </div>
+            <div class="step-content">
+              <h3>Teknik Memanen Daun</h3>
+              <p>
+                Panen hanya daun paling luar (daun yang paling tua dan tebal). Iris secara rapi sedekat mungkin dengan pangkal batang menggunakan pisau tajam bersih. Hindari memotong daun muda yang berada di pusat tanaman.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. KONDISI TUMBUH IDEAL
+         ========================================================================== -->
+    <section class="section" id="kondisi-tumbuh">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 10 • Parameter Lingkungan</span>
+          <h2 class="section-title">Kondisi Tumbuh Ideal</h2>
+          <p class="section-subtitle">
+            Kombinasi faktor lingkungan mikro yang memastikan tanaman lidah buaya tumbuh subur, berdaun montok tebal, dan bebas dari penyakit busuk akar.
+          </p>
+        </div>
+
+        <div class="conditions-grid">
+          <!-- Light -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Intensitas Cahaya</h3>
+            <p class="cond-desc">Cahaya terang tersaring hingga sinar matahari langsung yang adaptif. Membutuhkan sekitar 5–6 jam cahaya terang harian.</p>
+            <span class="cond-tip">Hindari: Ruang gelap tanpa ventilasi</span>
+          </div>
+
+          <!-- Water -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Kebutuhan Air</h3>
+            <p class="cond-desc">Penyiraman teratur tetapi jarang. Lebih baik kurang air daripada kelebihan air karena sukulen tahan kekeringan.</p>
+            <span class="cond-tip">Kunci: Siram hanya saat tanah kering</span>
+          </div>
+
+          <!-- Soil -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 20h20M4 20l4-8 4 4 4-6 4 10"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Karakteristik Tanah</h3>
+            <p class="cond-desc">Media tanam berporositas tinggi dengan pH netral hingga sedikit basa (6.5–7.5). Kaya pasir dan kerikil halus.</p>
+            <span class="cond-tip">Media kaktus & sukulen komersial</span>
+          </div>
+
+          <!-- Pot -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6h16l-2 14H6L4 6zM2 6h20"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Spesifikasi Pot</h3>
+            <p class="cond-desc">Pot berbahan terakota tanah liat berpori lebih direkomendasikan daripada pot plastik kedap, wajib memiliki lubang drainase bawah.</p>
+            <span class="cond-tip">Wajib: Lubang drainase lancar</span>
+          </div>
+
+          <!-- Temperature -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Suhu Lingkungan</h3>
+            <p class="cond-desc">Rentang suhu optimal berada di antara 20°C hingga 35°C. Sangat cocok dengan iklim tropis Indonesia sepanjang tahun.</p>
+            <span class="cond-tip">Suhu ideal: 22°C – 32°C</span>
+          </div>
+
+          <!-- Humidity -->
+          <div class="cond-card reveal">
+            <div class="cond-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 15a4 4 0 0 0 4 4h13a3 3 0 0 0 0-6h-.08A6 6 0 0 0 8 7.37 4 4 0 0 0 3 15z"/>
+              </svg>
+            </div>
+            <h3 class="cond-title">Kelembapan Udara</h3>
+            <p class="cond-desc">Lebih menyukai kelembapan udara sedang hingga rendah (40–60%). Sirkulasi udara yang lancar sangat penting mencegah jamur.</p>
+            <span class="cond-tip">Pastikan ada sirkulasi udara baik</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. MASALAH YANG SERING TERJADI (PROBLEM & SOLUTION)
+         ========================================================================== -->
+    <section class="section section-alt" id="masalah-tanaman">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 11 • Pemecahan Masalah</span>
+          <h2 class="section-title">Masalah yang Sering Terjadi</h2>
+          <p class="section-subtitle">
+            Pelajari gejala perubahan visual pada daun dan sistem perakaran lidah buaya, kemungkinan penyebab biologisnya, serta langkah perbaikan yang tepat.
+          </p>
+        </div>
+
+        <div class="problems-grid">
+          <!-- Problem 1 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <h3 class="problem-title">Daun Menguning dan Lembek</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Frekuensi penyiraman berlebihan (overwatering) sehingga tanah selalu basah dan akar kekurangan oksigen.
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Hentikan penyiraman segera. Angkat tanaman dari pot untuk memeriksa akar, buang akar yang busuk, dan ganti media tanam dengan campuran yang lebih berpasir dan kering.
+            </p>
+          </div>
+
+          <!-- Problem 2 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>
+                </svg>
+              </div>
+              <h3 class="problem-title">Akar Membusuk dan Berbau</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Infeksi jamur patogen tanah akibat media tanam menggenang tanpa sirkulasi drainase yang memadai.
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Potong seluruh bagian akar yang berwarna cokelat kehitaman dan lembek menggunakan gunting steril. Angin-anginkan selama 1 hari hingga luka mengering (callus), lalu tanam ulang di pot berlubang baru.
+            </p>
+          </div>
+
+          <!-- Problem 3 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M8 8l4 4 4-4"/></svg>
+              </div>
+              <h3 class="problem-title">Daun Menjadi Tipis dan Mengkerut</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Kekurangan cairan atau tanaman mengalami kekeringan ekstrem berkepanjangan sehingga cadangan air di gel terkuras habis.
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Berikan penyiraman tuntas hingga air menetes dari dasar pot. Daun sukulen biasanya akan menyerap air dan kembali montok dalam beberapa hari.
+            </p>
+          </div>
+
+          <!-- Problem 4 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/></svg>
+              </div>
+              <h3 class="problem-title">Daun Berubah Kecokelatan atau Kemerahan</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Respon stres cahaya akibat paparan sinar matahari terik secara tiba-tiba tanpa proses aklimatisasi (sunburn/stres fototermal).
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Pindahkan pot ke lokasi yang lebih teduh dengan cahaya terang tersaring. Warna hijau segar akan berangsur pulih dalam 1–2 minggu.
+            </p>
+          </div>
+
+          <!-- Problem 5 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a4 4 0 0 0-4 4c0 3 4 7 4 7s4-4 4-7a4 4 0 0 0-4-4z"/>
+                </svg>
+              </div>
+              <h3 class="problem-title">Hama Kutu Putih (Mealybugs)</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Serangga kutu putih pengisap cairan yang bersembunyi di sela-sela pangkal pelepah daun yang terlindung.
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Bersihkan koloni kutu putih menggunakan kapas bertangkai (cotton bud) yang dibasahi alkohol 70%, atau semprotkan larutan sabun kalium insektisida alami.
+            </p>
+          </div>
+
+          <!-- Problem 6 -->
+          <div class="problem-card reveal">
+            <div class="problem-header">
+              <div class="problem-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+              </div>
+              <h3 class="problem-title">Tanaman Menjadi Pucat dan Menjulur (Etiolasi)</h3>
+            </div>
+            <div class="problem-cause">
+              <strong>Kemungkinan Penyebab:</strong> Kekurangan intensitas cahaya matahari sehingga tanaman memanjangkan batangnya ke arah sumber cahaya.
+            </div>
+            <p class="problem-solution">
+              <strong>Solusi:</strong> Pindahkan tanaman secara bertahap ke tempat yang lebih dekat dengan jendela atau area luar ruangan beratap transparan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. CARA MENGOLAH DAUN LIDAH BUAYA
+         ========================================================================== -->
+    <section class="section" id="pengolahan">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 12 • Pasca Panen</span>
+          <h2 class="section-title">Cara Mengolah Daun Lidah Buaya</h2>
+          <p class="section-subtitle">
+            Panduan higienis dan aman untuk memisahkan gel bening dari getah kuning lateks beraroma tajam sebelum dimanfaatkan.
+          </p>
+        </div>
+
+        <div class="processing-grid">
+          <!-- Step 1 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">01</div>
+            <h3 class="proc-title">Pilih Daun yang Sehat</h3>
+            <p class="proc-desc">Pilih daun paling luar yang tebal, gemuk, segar, dan tidak memiliki bercak penyakit atau pembusukan.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">02</div>
+            <h3 class="proc-title">Cuci Daun Bersih</h3>
+            <p class="proc-desc">Bilas seluruh permukaan helaian daun di bawah kucuran air mengalir untuk menghilangkan debu dan kotoran tanah.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">03</div>
+            <h3 class="proc-title">Potong Pangkal Daun</h3>
+            <p class="proc-desc">Potong sedikit bagian pangkal putih daun menggunakan pisau bersih untuk membuka jalur saluran getah lateks.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">04</div>
+            <h3 class="proc-title">Tiriskan Getah Kuning</h3>
+            <p class="proc-desc">Berdirikan daun secara tegak di dalam wadah selama 15–30 menit agar cairan lateks aloin kuning mengalir tuntas ke dasar.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">05</div>
+            <h3 class="proc-title">Kupas Kulit Luar Hijau</h3>
+            <p class="proc-desc">Iris duri pada kedua tepi samping daun, lalu kupas lapisan kulit hijau tipis menggunakan pisau tajam secara mendatar.</p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">06</div>
+            <h3 class="proc-title">Ambil Gel Transparan</h3>
+            <p class="proc-desc">Gunakan sendok bersih atau pisau tumpul untuk mengeruk daging gel jernih agar terlepas dari sisa kulit bawah.</p>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">07</div>
+            <h3 class="proc-title">Bilas Gel dengan Benar</h3>
+            <p class="proc-desc">Cuci potongan gel dengan air bersih beberapa kali hingga sisa lendir berlebih dan getah kekuningan hilang sempurna.</p>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="proc-card reveal">
+            <div class="proc-num">08</div>
+            <h3 class="proc-title">Simpan atau Gunakan</h3>
+            <p class="proc-desc">Gunakan gel langsung untuk masker kulit, atau simpan dalam wadah kedap kaca di dalam lemari pendingin (maksimal 5–7 hari).</p>
+          </div>
+        </div>
+
+        <div class="warning-callout reveal" style="max-width: 900px; margin: 0 auto;">
+          <div class="warning-callout-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <div class="warning-callout-text">
+            <h4>Peringatan Pengolahan Konsumsi:</h4>
+            <p>
+              Jika gel lidah buaya ditujukan untuk dikonsumsi (minuman atau makanan olahan), pembuangan getah kuning lateks (aloin) dan perebusan sebentar dengan air garam sangat dianjurkan untuk menonaktifkan senyawa pencahar alami dan menghilangkan rasa getir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. KEAMANAN DAN HAL YANG PERLU DIPERHATIKAN
+         ========================================================================== -->
+    <section class="section section-alt" id="keamanan">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 13 • Keselamatan</span>
+          <h2 class="section-title">Keamanan & Peringatan Penggunaan</h2>
+          <p class="section-subtitle">
+            Meskipun berbahan alami, penggunaan tanaman obat tetap memiliki batasan farmakologis yang harus dipahami demi keselamatan diri.
+          </p>
+        </div>
+
+        <div class="safety-box reveal">
+          <div class="safety-grid">
+            <div class="safety-card">
+              <div class="safety-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h4>Uji Alergi Kulit (Patch Test)</h4>
+              <p>Penggunaan topikal segar dapat menimbulkan reaksi iritasi atau dermatitis kontak pada orang dengan kulit hipersensitif. Oleskan sedikit gel pada lipatan siku dalam selama 24 jam sebelum pemakaian luas.</p>
+            </div>
+
+            <div class="safety-card">
+              <div class="safety-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              </div>
+              <h4>Bahaya Menelan Lateks Kuning</h4>
+              <p>Lateks daun kaya senyawa aloin yang bersifat pencahar stimulan kuat. Konsumsi oral lateks yang tidak terkontrol dapat memicu kram perut hebat, diare berlebih, dan gangguan keseimbangan elektrolit tubuh.</p>
+            </div>
+
+            <div class="safety-card">
+              <div class="safety-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h4>Kelompok Rentan & Interaksi Obat</h4>
+              <p>Ibu hamil dan menyusui dilarang keras mengonsumsi produk lateks aloe karena dapat merangsang kontraksi rahim. Pasien diabetes atau pengguna obat jantung/diuretik wajib berkonsultasi dengan dokter.</p>
+            </div>
+          </div>
+
+          <div class="disclaimer-banner">
+            <div class="disclaimer-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+            </div>
+            <p>
+              <strong>Disclaimer Edukasi:</strong> Informasi pada website AloePedia ini bersifat edukatif dan umum, serta tidak menggantikan saran medis, diagnosis klinis, atau resep pengobatan profesional dari dokter dan tenaga kesehatan berwenang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. FAKTA MENARIK
+         ========================================================================== -->
+    <section class="section" id="fakta">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 14 • Trivia Botani</span>
+          <h2 class="section-title">Fakta Menarik Lidah Buaya</h2>
+          <p class="section-subtitle">
+            Kumpulan fakta unik dan keistimewaan biologis <em>Aloe vera</em> yang jarang diketahui publik.
+          </p>
+        </div>
+
+        <div class="facts-grid">
+          <div class="fact-card reveal">
+            <div class="fact-badge">Adaptasi Unik</div>
+            <h3 class="fact-title">Bernapas di Malam Hari (CAM)</h3>
+            <p class="fact-desc">
+              Untuk menghemat air, stomata daun lidah buaya hanya terbuka di malam hari saat suhu dingin untuk menyerap karbon dioksida melalui jalur fotosintesis Crassulacean Acid Metabolism.
+            </p>
+          </div>
+
+          <div class="fact-card reveal">
+            <div class="fact-badge">Keanekaragaman Hayati</div>
+            <h3 class="fact-title">Keluarga Besar 500+ Spesies</h3>
+            <p class="fact-desc">
+              Genus <em>Aloe</em> mencakup lebih dari 500 spesies di dunia, mulai dari miniatur sukulen mungil beberapa sentimeter hingga pohon raksasa <em>Aloidendron barberae</em> setinggi 18 meter.
+            </p>
+          </div>
+
+          <div class="fact-card reveal">
+            <div class="fact-badge">Ketahanan Ekstrem</div>
+            <h3 class="fact-title">Bertahan Tanpa Hujan Berbulan-bulan</h3>
+            <p class="fact-desc">
+              Dengan cadangan air yang terikat rapat dalam polimer gel dan lapisan kutikula lilinnya, tanaman ini mampu tetap segar walau tidak menerima air hujan selama berbulan-bulan.
+            </p>
+          </div>
+
+          <div class="fact-card reveal">
+            <div class="fact-badge">Bukan Keluarga Kaktus</div>
+            <h3 class="fact-title">Kerap Disalahpahami sebagai Kaktus</h3>
+            <p class="fact-desc">
+              Meskipun sama-sama sukulen berduri pelindung, lidah buaya secara botani sama sekali bukan kaktus. Lidah buaya berfamili Asphodelaceae, sedangkan kaktus sejati adalah famili Cactaceae.
+            </p>
+          </div>
+
+          <div class="fact-card reveal">
+            <div class="fact-badge">Ekologi Penyerbukan</div>
+            <h3 class="fact-title">Bunga Sahabat Burung Madu</h3>
+            <p class="fact-desc">
+              Bunga tabung berwarna jingga-kuning pada tanaman lidah buaya memproduksi nektar manis berlimpah yang menjadi sumber energi favorit bagi burung madu dan lebah liar di alam.
+            </p>
+          </div>
+
+          <div class="fact-card reveal">
+            <div class="fact-badge">Kekuatan Regenerasi</div>
+            <h3 class="fact-title">Penyembuhan Diri Otomatis</h3>
+            <p class="fact-desc">
+              Bila helaian daun lidah buaya tergores atau terpotong sebagian di alam terbuka, getahnya akan segera membentuk lapisan pelindung karet tipis dalam hitungan jam untuk mencegah infeksi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16. MITOS VS FAKTA
+         ========================================================================== -->
+    <section class="section section-alt" id="mitos-fakta">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 15 • Verifikasi Fakta</span>
+          <h2 class="section-title">Mitos vs Fakta Ilmiah</h2>
+          <p class="section-subtitle">
+            Mari meluruskan berbagai mitos populer di masyarakat seputar lidah buaya dengan kacamata botani dan farmakologi modern.
+          </p>
+        </div>
+
+        <div class="myth-grid">
+          <!-- Myth 1 -->
+          <div class="myth-card reveal">
+            <div class="myth-part">
+              <span class="myth-label">❌ Mitos Populer</span>
+              <div class="myth-text">"Lidah buaya adalah obat ajaib yang dapat menyembuhkan segala macam penyakit kronis."</div>
+            </div>
+            <div class="fact-part">
+              <span class="fact-label">✓ Fakta Ilmiah</span>
+              <div class="fact-explanation">
+                Meskipun mengandung puluhan senyawa bermanfaat untuk perawatan topikal dan hidrasi, lidah buaya <strong>bukanlah panasea (obat penyembuh segala penyakit)</strong> dan tidak dapat menggantikan obat resep dokter.
+              </div>
+            </div>
+          </div>
+
+          <!-- Myth 2 -->
+          <div class="myth-card reveal">
+            <div class="myth-part">
+              <span class="myth-label">❌ Mitos Populer</span>
+              <div class="myth-text">"Seluruh bagian daun lidah buaya aman langsung dimakan segar tanpa perlu dicuci atau dibuang getahnya."</div>
+            </div>
+            <div class="fact-part">
+              <span class="fact-label">✓ Fakta Ilmiah</span>
+              <div class="fact-explanation">
+                Lapisan getah kuning (lateks aloin) yang berada di bawah kulit berasa sangat pahit dan bersifat laksatif keras. Cairan ini wajib ditiriskan dan dibersihkan sebelum daging gel dikonsumsi.
+              </div>
+            </div>
+          </div>
+
+          <!-- Myth 3 -->
+          <div class="myth-card reveal">
+            <div class="myth-part">
+              <span class="myth-label">❌ Mitos Populer</span>
+              <div class="myth-text">"Semakin sering disiram air setiap hari, lidah buaya akan tumbuh semakin gemuk dan subur."</div>
+            </div>
+            <div class="fact-part">
+              <span class="fact-label">✓ Fakta Ilmiah</span>
+              <div class="fact-explanation">
+                Lidah buaya adalah sukulen pemelihara air. Menyiramnya setiap hari pada pot tanpa sirkulasi lancar justru merupakan <strong>penyebab nomor satu kematian tanaman</strong> akibat busuk akar.
+              </div>
+            </div>
+          </div>
+
+          <!-- Myth 4 -->
+          <div class="myth-card reveal">
+            <div class="myth-part">
+              <span class="myth-label">❌ Mitos Populer</span>
+              <div class="myth-text">"Semua spesies tanaman dalam genus Aloe memiliki manfaat dan keamanan yang persis sama dengan Aloe vera."</div>
+            </div>
+            <div class="fact-part">
+              <span class="fact-label">✓ Fakta Ilmiah</span>
+              <div class="fact-explanation">
+                Dari ratusan spesies Aloe, hanya segelintir (terutama <em>Aloe vera</em> dan <em>Aloe ferox</em>) yang umum digunakan untuk komersial. Beberapa spesies liar mengandung racun alkaloid tertentu dan tidak boleh sembarangan digunakan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         17. PERBANDINGAN GEL VS LATEKS
+         ========================================================================== -->
+    <section class="section" id="perbandingan">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 16 • Komparasi Anatomi</span>
+          <h2 class="section-title">Perbandingan Gel Bening vs Lateks Kuning</h2>
+          <p class="section-subtitle">
+            Tabel perbandingan komprehensif untuk memahami perbedaan fisik, fisiologis, dan aplikasi keselamatan kedua substansi daun.
+          </p>
+        </div>
+
+        <div class="comparison-container reveal">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Gel Bagian Dalam (Parenkim)</th>
+                <th>Lateks Daun (Eksudat Aloin)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="comparison-param">Warna & Tampilan</td>
+                <td class="gel-col">Bening, jernih, transparan menyerupai jeli</td>
+                <td class="latex-col">Kuning kecokelatan kental, keruh</td>
+              </tr>
+              <tr>
+                <td class="comparison-param">Lokasi Anatomi Daun</td>
+                <td class="gel-col">Inti tengah daun (jaringan parenkim air)</td>
+                <td class="latex-col">Tepat di bawah kulit luar (sel-sel perisikel)</td>
+              </tr>
+              <tr>
+                <td class="comparison-param">Rasa & Aroma</td>
+                <td class="gel-col">Hambar, netral, menyegarkan</td>
+                <td class="latex-col">Sangat pahit pekat dan berbau khas tajam</td>
+              </tr>
+              <tr>
+                <td class="comparison-param">Senyawa Utama</td>
+                <td class="gel-col">Air (~98.5%), Polisakarida Acemannan, Asam Amino</td>
+                <td class="latex-col">Antrakuinon hidroksi (Aloin A dan Aloin B)</td>
+              </tr>
+              <tr>
+                <td class="comparison-param">Penggunaan Utama</td>
+                <td class="gel-col">Hidrasi kulit, pelembap, formulasi pangan aman</td>
+                <td class="latex-col">Bahan obat pencahar masa lampau dengan kontrol ketat</td>
+              </tr>
+              <tr>
+                <td class="comparison-param">Status Keamanan</td>
+                <td class="gel-col">Aman untuk aplikasi topikal dan konsumsi olahan bersih</td>
+                <td class="latex-col">Berisiko iritasi mukosa usus bila dikonsumsi tanpa panduan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         18. GALERI ALOE VERA & LIGHTBOX
+         ========================================================================== -->
+    <section class="section section-alt" id="galeri">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 17 • Dokumentasi Visual</span>
+          <h2 class="section-title">Galeri Fotografi Botani</h2>
+          <p class="section-subtitle">
+            Koleksi potret berkualitas tinggi tanaman <em>Aloe vera</em> dari berbagai sudut pandang botani, budidaya perkebunan, hingga produk olahan.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">Semua Foto</button>
+          <button class="filter-btn" data-filter="tanaman">Tanaman & Daun</button>
+          <button class="filter-btn" data-filter="bunga">Bunga</button>
+          <button class="filter-btn" data-filter="budidaya">Budidaya</button>
+          <button class="filter-btn" data-filter="produk">Olahan & Sains</button>
+        </div>
+
+        <!-- Grid Images -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item reveal" data-category="tanaman">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/hero.jpg" alt="Tanaman Lidah Buaya Segar Berembun dalam Pot Terakota" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Morfologi</div>
+              <h3 class="gallery-title">Tanaman Aloe vera Berembun Pagi</h3>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item reveal" data-category="produk">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/gel_slice.jpg" alt="Potongan Irisan Daun Lidah Buaya Menampakkan Gel Bening Murni" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Anatomi</div>
+              <h3 class="gallery-title">Kubus Kristal Gel Daging Daun</h3>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item reveal" data-category="bunga">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/flower.jpg" alt="Bulir Bunga Lidah Buaya Berwarna Jingga Mekar di Bawah Langit Cerah" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Reproduksi</div>
+              <h3 class="gallery-title">Bulir Bunga Jingga-Kuning Mekar</h3>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item reveal" data-category="produk">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/products.jpg" alt="Komposisi Produk Alami Berbahan Lidah Buaya dan Minuman Segar" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Pemanfaatan</div>
+              <h3 class="gallery-title">Formulasi Kosmetik & Sari Alami</h3>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item reveal" data-category="budidaya">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/farm.jpg" alt="Perkebunan Pertanian Organik Lidah Buaya Skala Luas" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Pertanian</div>
+              <h3 class="gallery-title">Perkebunan Budidaya Berkelanjutan</h3>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item reveal" data-category="tanaman">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/indoor.jpg" alt="Lidah Buaya dalam Pot Keramik sebagai Tanaman Hias Ruang Tamu Modern" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Dekorasi</div>
+              <h3 class="gallery-title">Tanaman Hias Interior Rumah Minimalis</h3>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="gallery-item reveal" data-category="produk">
+            <div class="gallery-thumb-wrap">
+              <img src="assets/images/latex.jpg" alt="Pengamatan Ekstraksi Lateks Aloin Kuning di Gelas Kimia Laboratorium" width="400" height="260" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <div class="gallery-tag">Sains</div>
+              <h3 class="gallery-title">Ekstraksi & Penirisan Getah Lateks Kuning</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau Gambar Galeri">
+      <div class="lightbox-content">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Tutup Pratinjau">✕</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Pratinjau Gambar Perbesar">
+        <div id="lightbox-caption" class="lightbox-caption-text"></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         19. FAQ (TANYA JAWAB BOTANI)
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 18 • Tanya Jawab</span>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+          <p class="section-subtitle">
+            Jawaban ringkas dan ilmiah atas pertanyaan umum seputar tanaman lidah buaya yang sering ditanyakan pelajar dan pecinta tanaman.
+          </p>
+        </div>
+
+        <div class="faq-container reveal">
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>1. Apa itu lidah buaya?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Lidah buaya adalah tanaman tahunan sukulen dari famili Asphodelaceae yang beradaptasi di wilayah kering dengan menyimpan cadangan air melimpah dalam bentuk gel kental di dalam daunnya.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>2. Apa nama ilmiah lidah buaya?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Nama ilmiah resminya adalah <em>Aloe vera</em> (L.) Burm.f., dengan sinonim botani yang cukup dikenal yaitu <em>Aloe barbadensis</em> Mill.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>3. Apakah lidah buaya termasuk jenis kaktus?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Tidak. Meskipun sama-sama tergolong tanaman sukulen (penyimpan air), kaktus termasuk famili botani Cactaceae, sedangkan lidah buaya tergolong famili Asphodelaceae.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>4. Bagian mana yang disebut gel Aloe vera?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Gel Aloe vera adalah jaringan lunak transparan tak berwarna di bagian tengah (parenkim dalam) daun, terdiri sekitar 98.5% air dan polisakarida rantai panjang seperti acemannan.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>5. Apa perbedaan antara gel dan lateks lidah buaya?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Gel berada di pusat daun, tidak berwarna dan aman melembapkan kulit. Sementara lateks adalah getah kuning di bawah kulit daun yang mengandung senyawa aloin, berasa sangat pahit, dan bersifat pencahar kuat.
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>6. Seberapa sering tanaman lidah buaya harus disiram?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Cukup disiram bila media tanah atas sudah benar-benar kering saat disentuh (biasanya sekitar 1–2 minggu sekali di pot dalam ruangan, atau 1 minggu sekali di luar ruangan).
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>7. Apakah lidah buaya membutuhkan sinar matahari penuh?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Lidah buaya menyukai cahaya terang tidak langsung atau sinar matahari pagi. Paparan sinar matahari terik tengah hari secara mendadak dapat membuat daun terbakar dan berwarna kecokelatan.
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>8. Apakah lidah buaya bisa ditanam dengan baik di dalam pot?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Bisa dan sangat ideal! Gunakan pot dengan lubang drainase lancar (seperti pot tanah liat terakota) dan campuran media tanam yang berpori banyak mengandung pasir atau perlite.
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>9. Apa saja penggunaan utama Aloe vera di industri saat ini?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Banyak dimanfaatkan dalam produk hidrasi kulit (gel, lotion), perawatan rambut (shampoo, kondisioner), minuman penyegar kemasan nata de aloe, hingga pelapis alami buah pascapanen.
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>10. Apakah semua klaim kesehatan Aloe vera sudah terbukti secara ilmiah?</span>
+              <span class="faq-icon-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Tidak semuanya. Bukti ilmiah yang paling kuat mendukung efektivitasnya untuk melembapkan kulit dan menenangkan luka bakar ringan. Namun, klaim penyembuhan penyakit dalam kronis masih berstatus studi awal dan memerlukan riset klinis lebih lanjut.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         20. QUIZ INTERAKTIF
+         ========================================================================== -->
+    <section class="section section-alt" id="quiz">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 19 • Evaluasi Wawasan</span>
+          <h2 class="section-title">Seberapa Kenal Kamu dengan Aloe Vera?</h2>
+          <p class="section-subtitle">
+            Uji pemahamanmu tentang morfologi, taksonomi, dan cara merawat lidah buaya melalui kuis interaktif berikut!
+          </p>
+        </div>
+
+        <div class="quiz-wrapper reveal">
+          <!-- Question Screen -->
+          <div id="quiz-question-card">
+            <div class="quiz-progress-bar">
+              <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+            </div>
+
+            <div class="quiz-meta">
+              <span id="quiz-meta-num">Pertanyaan 1 dari 7</span>
+              <span>Kuis Edukasi Botani</span>
+            </div>
+
+            <h3 id="quiz-question-text" class="quiz-question-text">Memuat pertanyaan...</h3>
+
+            <div id="quiz-options-container" class="quiz-options">
+              <!-- Dynamically populated by script.js -->
+            </div>
+
+            <div id="quiz-feedback-box" class="quiz-feedback-box"></div>
+
+            <div class="quiz-action-bar">
+              <button id="quiz-next-btn" class="btn btn-primary" style="display: none;">
+                Pertanyaan Selanjutnya →
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Screen -->
+          <div id="quiz-result-view" class="quiz-result-view">
+            <div class="quiz-score-circle">
+              <span id="quiz-final-score" class="quiz-score-number">7/7</span>
+              <span class="quiz-score-total">Skor Akhir</span>
+            </div>
+            <h3 class="quiz-result-title">Selesai Mengerjakan Kuis!</h3>
+            <p id="quiz-final-msg" class="quiz-result-msg">
+              Hasil kuis kamu sangat memuaskan! Kamu memiliki pemahaman botani yang sangat baik.
+            </p>
+            <button id="quiz-restart-btn" class="btn btn-primary">
+              Coba Lagi Kuis ↺
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         21. SUMBER DAN REFERENSI
+         ========================================================================== -->
+    <section class="section" id="referensi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Bab 20 • Kepustakaan</span>
+          <h2 class="section-title">Sumber & Referensi Ilmiah</h2>
+          <p class="section-subtitle">
+            Seluruh sajian informasi, anatomi, dan fitokimia pada website ini dikurasi berdasarkan sumber akademik dan literatur botani terpercaya.
+          </p>
+        </div>
+
+        <div class="ref-grid">
+          <!-- Ref 1 -->
+          <div class="ref-card reveal">
+            <div>
+              <span class="ref-inst">World Health Organization (WHO)</span>
+              <h4 class="ref-title">WHO Monographs on Selected Medicinal Plants — Vol. 1: Gel Aloe vera & Aloe</h4>
+              <p class="ref-meta">Organisasi Kesehatan Dunia (WHO), Jenewa. Pedoman standar farmakopeia dan keamanan herbal internasional.</p>
+            </div>
+            <a href="https://iris.who.int/handle/10665/42052" target="_blank" rel="noopener noreferrer" class="ref-link">
+              Buka Naskah Publikasi WHO
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Ref 2 -->
+          <div class="ref-card reveal">
+            <div>
+              <span class="ref-inst">National Institutes of Health (NIH USA)</span>
+              <h4 class="ref-title">Aloe Vera: In-Depth Overview by NCCIH</h4>
+              <p class="ref-meta">National Center for Complementary and Integrative Health. Ringkasan bukti uji klinis dan profil keamanan.</p>
+            </div>
+            <a href="https://www.nccih.nih.gov/health/aloe-vera" target="_blank" rel="noopener noreferrer" class="ref-link">
+              Akses Laman Resmi NCCIH
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Ref 3 -->
+          <div class="ref-card reveal">
+            <div>
+              <span class="ref-inst">Royal Botanic Gardens, Kew</span>
+              <h4 class="ref-title">Plants of the World Online (POWO) — Taxonomic Profile of <em>Aloe vera</em></h4>
+              <p class="ref-meta">Kew Science Database. Informasi taksonomi resmi, distribusi geografis global, dan sinonim botani.</p>
+            </div>
+            <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:530019-1" target="_blank" rel="noopener noreferrer" class="ref-link">
+              Kunjungi Direktori Kew POWO
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Ref 4 -->
+          <div class="ref-card reveal">
+            <div>
+              <span class="ref-inst">PubMed Central (PMC) Review</span>
+              <h4 class="ref-title">Composition and Applications of <em>Aloe vera</em> Leaf Gel: A Comprehensive Botanical Review</h4>
+              <p class="ref-meta">Journal of Plant Foods for Human Nutrition / Phytotherapy Research. Tinjauan kimia acemannan dan fenolik.</p>
+            </div>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=aloe+vera+gel+acemannan+review" target="_blank" rel="noopener noreferrer" class="ref-link">
+              Cari Indeks PubMed
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       22. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-brand">
+          <h3>
+            <svg style="width:26px; height:26px; fill:var(--accent);" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            AloePedia
+          </h3>
+          <p>
+            "Belajar mengenal <em>Aloe vera</em> dan keanekaragaman tanaman melalui informasi yang mudah dipahami."
+          </p>
+          <p style="font-size:0.85rem; color:#8da496;">
+            Platform ensiklopedia mini botani independen yang didedikasikan untuk literasi sains generasi muda.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Materi Botani</h4>
+          <ul class="footer-links">
+            <li><a href="#tentang">Mengenal Aloe vera</a></li>
+            <li><a href="#sejarah">Sejarah Lintas Zaman</a></li>
+            <li><a href="#klasifikasi">Klasifikasi Ilmiah</a></li>
+            <li><a href="#morfologi">Morfologi Organ</a></li>
+            <li><a href="#struktur-daun">Struktur Irisan Daun</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>Aplikasi & Edukasi</h4>
+          <ul class="footer-links">
+            <li><a href="#kandungan">Kandungan Fitokimia</a></li>
+            <li><a href="#manfaat">Manfaat & Bukti Sains</a></li>
+            <li><a href="#budidaya">Panduan Budidaya</a></li>
+            <li><a href="#pengolahan">Pengolahan Gel</a></li>
+            <li><a href="#quiz">Kuis Pengetahuan</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4>Standar & Keamanan</h4>
+          <ul class="footer-links">
+            <li><a href="#keamanan">Peringatan Keselamatan</a></li>
+            <li><a href="#perbandingan">Tabel Gel vs Lateks</a></li>
+            <li><a href="#mitos-fakta">Mitos vs Fakta</a></li>
+            <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+            <li><a href="#referensi">Kepustakaan Ilmiah</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <strong>Website Edukasi Tanaman Lidah Buaya</strong> • Dikembangkan untuk tujuan pembelajaran sains biologi.
+        </div>
+        <div>
+          Copyright © 2026 <strong>AloePedia</strong>. Seluruh hak cipta dilindungi.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Kembali ke Bagian Atas" title="Kembali ke Bagian Atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
